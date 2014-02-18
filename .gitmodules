@@ -1,0 +1,3 @@
+[submodule "External/simperium-ios"]
+	path = External/simperium-ios
+	url = https://github.com/Simperium/simperium-ios.git
