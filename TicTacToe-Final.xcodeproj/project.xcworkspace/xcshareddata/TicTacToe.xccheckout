@@ -5,34 +5,46 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>1C67A1C0-7EBD-4C44-B049-E0A6B7033206</string>
+	<string>B01A681B-2E98-4C40-BE65-F7596FB9B73F</string>
 	<key>IDESourceControlProjectName</key>
 	<string>TicTacToe</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>7450E91C-9024-4547-BA6B-327DEF132AA1</key>
-		<string>https://github.com/jleandroperez/TicTacToe-iOS.git</string>
+		<key>714BD954-33AC-497F-ADF9-3BFCFD33FA6C</key>
+		<string>https://github.com/Simperium/simperium-ios.git</string>
+		<key>DAEE67B7-7DD6-4692-847A-F5FF0B521E87</key>
+		<string>https://github.com/jleandroperez/TicTacToe-iOS</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>TicTacToe.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>7450E91C-9024-4547-BA6B-327DEF132AA1</key>
+		<key>714BD954-33AC-497F-ADF9-3BFCFD33FA6C</key>
+		<string>../../External/simperium-ios</string>
+		<key>DAEE67B7-7DD6-4692-847A-F5FF0B521E87</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/jleandroperez/TicTacToe-iOS.git</string>
+	<string>https://github.com/jleandroperez/TicTacToe-iOS</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>7450E91C-9024-4547-BA6B-327DEF132AA1</string>
+	<string>DAEE67B7-7DD6-4692-847A-F5FF0B521E87</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>7450E91C-9024-4547-BA6B-327DEF132AA1</string>
+			<string>714BD954-33AC-497F-ADF9-3BFCFD33FA6C</string>
+			<key>IDESourceControlWCCName</key>
+			<string>simperium-ios</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>DAEE67B7-7DD6-4692-847A-F5FF0B521E87</string>
 			<key>IDESourceControlWCCName</key>
 			<string>TicTacToe-iOS</string>
 		</dict>
