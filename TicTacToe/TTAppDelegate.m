@@ -22,17 +22,18 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
 	[self startSimperium];
+	[self authenticateSimperiumIfNeeded];
     return YES;
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
-	[self.simperium authenticateWithToken:TTSimperiumToken];
+	[self authenticateSimperiumIfNeeded];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {
-	[self.simperium signOutAndRemoveLocalData:YES];
+	[self.simperium signOutAndRemoveLocalData:YES completion:nil];
 }
 
 + (TTAppDelegate *)sharedDelegate
@@ -49,14 +50,20 @@
 {
 	TTCoreDataManager* manager = [TTCoreDataManager sharedInstance];
 	
-	self.simperium = [[Simperium alloc] initWithRootViewController:self.window.rootViewController];
-	self.simperium.authenticationEnabled = NO;
+	self.simperium = [[Simperium alloc] initWithModel:manager.managedObjectModel
+											  context:manager.managedObjectContext
+										  coordinator:manager.persistentStoreCoordinator];
+	
 	self.simperium.verboseLoggingEnabled = YES;
-	[self.simperium startWithAppID:TTSimperiumAppId
-							APIKey:TTSimperiumAppKey
-							 model:manager.managedObjectModel
-						   context:manager.managedObjectContext
-					   coordinator:manager.persistentStoreCoordinator];
+}
+
+- (void)authenticateSimperiumIfNeeded
+{
+	if (self.simperium.user.authenticated) {
+		return;
+	}
+	
+	[self.simperium authenticateWithAppID:TTSimperiumAppId token:TTSimperiumToken];
 }
 
 @end
